@@ -22,10 +22,19 @@
     .highlight p { color: var(--fg); margin: 0; font-weight: 500; }
     footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); font-size: .8rem; color: var(--muted); }
     footer a { color: var(--accent); text-decoration: none; }
+    .lang { position: fixed; top: 16px; right: 20px; display: flex; gap: 6px; font-size: .75rem; z-index: 100; background: var(--bg); padding: 4px 8px; border-radius: 8px; border: 1px solid var(--border); }
+    .lang a { color: var(--muted); text-decoration: none; padding: 2px 4px; }
+    .lang a:hover { color: var(--fg); }
+    .lang .active { color: var(--accent); font-weight: 700; }
   </style>
 </head>
 <body>
-  <nav><a href="index.html">&larr; MDReader</a></nav>
+  <nav class="lang">
+    <span class="active">EN</span><span>·</span>
+    <a href="es/privacy.html">ES</a><span>·</span>
+    <a href="fr/privacy.html">FR</a>
+  </nav>
+  <nav style="max-width:700px;margin:0 auto;padding:24px 24px 0"><a href="index.html" style="color:var(--accent);text-decoration:none;font-size:.9rem">&larr; MDReader</a></nav>
   <main>
     <h1>Privacy Policy</h1>
     <p class="updated">Last updated: June 2026</p>
