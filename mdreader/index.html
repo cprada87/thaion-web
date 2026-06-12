@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MDReader — Markdown Editor & Viewer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #ffffff; --fg: #1c1c1e; --accent: #007aff;
+      --muted: #6e6e73; --surface: #f2f2f7; --border: #d1d1d6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #000; --fg: #f5f5f7; --accent: #0a84ff; --muted: #98989d; --surface: #1c1c1e; --border: #38383a; }
+    }
+    body { background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+
+    /* Hero */
+    .hero { max-width: 640px; margin: 0 auto; padding: 120px 24px 80px; text-align: center; }
+    .hero h1 { font-size: 4rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
+    .hero p { font-size: 1.2rem; color: var(--muted); margin-top: 16px; max-width: 400px; margin-left: auto; margin-right: auto; }
+    .hero .cta { display: inline-block; margin-top: 40px; padding: 16px 40px; background: var(--accent); color: #fff; border-radius: 100px; font-size: 1.05rem; font-weight: 600; text-decoration: none; }
+    .hero .price { display: block; margin-top: 12px; font-size: .9rem; color: var(--muted); }
+    .platforms { display: flex; justify-content: center; gap: 8px; margin-top: 24px; flex-wrap: wrap; }
+    .platforms span { padding: 4px 14px; border: 1px solid var(--border); border-radius: 100px; font-size: .78rem; color: var(--muted); }
+
+    /* Features */
+    .features { max-width: 700px; margin: 0 auto; padding: 0 24px 80px; }
+    .features h2 { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 32px; text-align: center; }
+    .list { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .item { display: flex; gap: 12px; align-items: flex-start; }
+    .item-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; margin-top: 8px; flex-shrink: 0; }
+    .item-text strong { display: block; font-size: .95rem; }
+    .item-text span { font-size: .85rem; color: var(--muted); }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 0 24px; }
+
+    .privacy-strip { max-width: 700px; margin: 0 auto; padding: 48px 24px; text-align: center; }
+    .privacy-strip h3 { font-size: 1.1rem; font-weight: 600; }
+    .privacy-strip p { font-size: .9rem; color: var(--muted); margin-top: 8px; }
+
+    footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); font-size: .8rem; color: var(--muted); }
+    footer a { color: var(--accent); text-decoration: none; }
+    @media (max-width: 500px) { .list { grid-template-columns: 1fr; } .hero h1 { font-size: 2.8rem; } }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>MDReader</h1>
+    <p>A beautiful Markdown editor and viewer for iPhone, iPad, Mac, and Apple Vision Pro.</p>
+    <a class="cta" href="YOUR_APP_STORE_LINK">Download — 1.99&thinsp;&euro;</a>
+    <span class="price">One-time purchase &middot; Universal</span>
+    <div class="platforms">
+      <span>iPhone</span><span>iPad</span><span>Mac</span><span>Vision Pro</span>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="features">
+    <h2>Everything you need. Nothing you don&rsquo;t.</h2>
+    <div class="list">
+      <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Rich rendering</strong><span>Headings, tables, code blocks, blockquotes, task lists</span></div></div>
+      <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Split-view editor</strong><span>Edit and preview side by side with live scroll sync</span></div></div>
+      <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Mermaid diagrams</strong><span>Flowcharts and sequence diagrams, rendered inline</span></div></div>
+      <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Files.app integration</strong><span>Open .md files in place from any file provider</span></div></div>
+      <div class="item"><div class="item-dot"></div><div class="item-text"><strong>iCloud Drive</strong><span>Your documents, always in sync across devices</span></div></div>
+      <div class="item"><div class="item-dot"></div><div class="item-text"><strong>Apple Vision Pro</strong><span>Native visionOS experience with spatial windowing</span></div></div>
+      <div class="item"><div class="item-dot"></div><div class="item-text"><strong>EN / ES / FR</strong><span>Full interface localisation in three languages</span></div></div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="privacy-strip">
+    <h3>Zero tracking. Zero data collection.</h3>
+    <p>MDReader has no analytics, no third-party SDKs, and no server calls.<br>Your documents stay on your device or in your personal iCloud Drive.</p>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="support.html">Support</a>
+    <p style="margin-top:8px">&copy; 2026 Christian Prada &middot; <a href="https://thaion.dev">thaion.dev</a></p>
+  </footer>
+
+</body>
+</html>
