@@ -18,8 +18,10 @@
     .hero { max-width: 640px; margin: 0 auto; padding: 120px 24px 80px; text-align: center; }
     .hero h1 { font-size: 4rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
     .hero p { font-size: 1.2rem; color: var(--muted); margin-top: 16px; max-width: 400px; margin-left: auto; margin-right: auto; }
-    .hero .cta { display: inline-block; margin-top: 40px; padding: 16px 40px; background: var(--accent); color: #fff; border-radius: 100px; font-size: 1.05rem; font-weight: 600; text-decoration: none; }
-    .hero .price { display: block; margin-top: 12px; font-size: .9rem; color: var(--muted); }
+    .hero .badge-cta { display: flex; flex-direction: column; align-items: center; gap: 14px; margin-top: 40px; }
+    .hero .badge-price { font-size: 2.4rem; font-weight: 700; color: var(--fg); letter-spacing: -.02em; }
+    .hero .badge-cta img { height: 54px; display: block; }
+    .hero .price { font-size: .85rem; color: var(--muted); }
     .platforms { display: flex; justify-content: center; gap: 8px; margin-top: 24px; flex-wrap: wrap; }
     .platforms span { padding: 4px 14px; border: 1px solid var(--border); border-radius: 100px; font-size: .78rem; color: var(--muted); }
     .features { max-width: 700px; margin: 0 auto; padding: 0 24px 80px; }
@@ -48,8 +50,13 @@
   <section class="hero">
     <h1>MDReader</h1>
     <p>Editor y visor de Markdown para iPhone, iPad, Mac y Apple Vision Pro.</p>
-    <a class="cta" href="YOUR_APP_STORE_LINK">Descargar — 4,99&thinsp;&euro;</a>
-    <span class="price">Compra única &middot; Universal</span>
+    <div class="badge-cta">
+      <span class="badge-price">4,99&thinsp;&euro;</span>
+      <a href="YOUR_APP_STORE_LINK">
+        <img src="../assets/badges/badge-es-white.svg" alt="Descargar en el App Store" height="54">
+      </a>
+      <span class="price">Compra &uacute;nica &middot; Universal</span>
+    </div>
     <div class="platforms">
       <span>iPhone</span><span>iPad</span><span>Mac</span><span>Vision Pro</span>
     </div>
